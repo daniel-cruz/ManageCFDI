@@ -13,7 +13,7 @@ def sortCFDI(source, destination):
 	destination += "/"
 	errors = {}
 
-	log  = open(datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S') + ".csv", "w") 
+	log  = open(datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H_%M_%S') + ".csv", "w") 
 	#log.write("sep=,")
 	log.write("Estatus,Origen,Destino\n")
 	for filename in glob.glob(source + '*.xml'):
