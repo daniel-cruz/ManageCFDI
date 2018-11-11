@@ -13,7 +13,8 @@ if(document.location != "https://portalcfdi.facturaelectronica.sat.gob.mx/Consul
     }
   }
 }else{
-  var links = document.getElementsByClassName("BtnDescarga");
+  var links = document.getElementsByName("BtnDescarga");
+  
   alert("Se van a descargar " + links.length + " CFDI's");
   for (var i = 0; i < links.length; i++) {
     window.open('https://portalcfdi.facturaelectronica.sat.gob.mx/' + links[i].getAttribute('onclick').substr(19).slice(0,-18));
